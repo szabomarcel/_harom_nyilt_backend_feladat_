@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "news", "news\news.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarConsole", "CarConsole\CarConsole.csproj", "{D4E5046C-E3DE-4ED2-B28A-13113DEF35AF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pokemon", "Pokemon\Pokemon.csproj", "{785D7A1D-59C8-4B75-BB04-CA2270D4318A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D4E5046C-E3DE-4ED2-B28A-13113DEF35AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4E5046C-E3DE-4ED2-B28A-13113DEF35AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4E5046C-E3DE-4ED2-B28A-13113DEF35AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{785D7A1D-59C8-4B75-BB04-CA2270D4318A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{785D7A1D-59C8-4B75-BB04-CA2270D4318A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{785D7A1D-59C8-4B75-BB04-CA2270D4318A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{785D7A1D-59C8-4B75-BB04-CA2270D4318A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
