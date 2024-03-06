@@ -13,11 +13,10 @@ namespace news
         static Hirek hirek = null;
         static async Task Main(string[] args)
         {
-            List<Hirek> hireks = new List<Hirek>();
-            await hir();
+            List<Hirek> hireks = await hir();
             foreach (Hirek hirek in hireks)
             {
-                Console.WriteLine($"{} - {}");
+                Console.WriteLine($"{hirek.Title} - {hirek.Date}");
             }
             Console.WriteLine("Vége");
             Console.ReadLine();

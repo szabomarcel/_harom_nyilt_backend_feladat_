@@ -17,6 +17,16 @@ namespace news
 
     public partial class Hirek
     {
+        public string Title { get; set; }
+        public DateTime Date { get; set; }
+
+        public Hirek(string title, DateTime date)
+        {
+            Title = title;
+            Date = date;
+        }
+        public Hirek() { }
+
         [JsonProperty("totalItems")]
         public long TotalItems { get; set; }
 
