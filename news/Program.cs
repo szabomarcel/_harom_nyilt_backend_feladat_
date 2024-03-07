@@ -5,26 +5,27 @@ using System.Net.Http;
 using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
+using news;
 
 namespace news
 {
     internal class Program
     {
-        static Hirek hirek = null;
+        static Item hirek = null;
         static async Task Main(string[] args)
         {
-            List<Hirek> hireks = await hir();
-            foreach (Hirek hirek in hireks)
+            List<Item> hireks = await hir();
+            foreach (Item hirek in hireks)
             {
-                Console.WriteLine($"{hirek.Title} - {hirek.Date}");
+                Console.WriteLine($"{hirek.Id} - {hirek.City}");
             }
             Console.WriteLine("Vége");
             Console.ReadLine();
         }
 
-        private static async Task<List<Hirek>> hir()
+        private static async Task<List<Item>> hir()
         {
-            List<Hirek> hirek = new List<Hirek>();
+            List<Item> hirek = new List<Item>();
             var client = new HttpClient();
             var request = new HttpRequestMessage(HttpMethod.Get, "https://chroniclingamerica.loc.gov/search/titles/results/?terms=oakland&format=json&page=5");
             var response = await client.SendAsync(request);            

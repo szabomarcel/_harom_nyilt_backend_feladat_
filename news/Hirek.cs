@@ -45,6 +45,13 @@ namespace news
 
     public partial class Item
     {
+        public DateTime Date { get; set; }
+
+        public Item(string title, DateTime date)
+        {
+            Title = title;
+            Date = date;
+        }
         [JsonProperty("essay")]
         public object[] Essay { get; set; }
 
