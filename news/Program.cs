@@ -18,7 +18,7 @@ namespace news
             foreach (Item hirek in hireks)
             {
                 Console.WriteLine($"{hirek.Id} - {hirek.City}");
-            }
+            } 
             Console.WriteLine("Vége");
             Console.ReadLine();
         }
