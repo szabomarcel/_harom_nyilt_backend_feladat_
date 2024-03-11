@@ -40,7 +40,7 @@ namespace news
         public long ItemsPerPage { get; set; }
 
         [JsonProperty("items")]
-        public Item[] Items { get; set; } 
+        public Item[] Items { get; set; }
     }
 
     public partial class Item
